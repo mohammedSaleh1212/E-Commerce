@@ -1,0 +1,17 @@
+
+
+
+@font-face {
+    font-family: kufi;
+    src: url(NotoKufiArabic-VariableFont_wght.ttf);
+  }
+
+  body {
+    font-family: 'kufi' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .dropdown-menu li:hover {
+    transition: 0.4s ease;
+    margin-right: 5px;
+
+    
+  }
