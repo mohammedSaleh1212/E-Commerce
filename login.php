@@ -11,42 +11,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/script.js"></script>
+  <script src="scripts/login.js">
   <title>تسجيل الدخول</title>
 
 
 
-  <script>
-    async function Login(event) {
-      const loginButton = document.getElementById('login')
-      const spinner = document.getElementById('spinner')
-      loginButton.classList.add("disabled")
-      spinner.classList.remove('d-none')
-
-      event.preventDefault();
-      const email = document.getElementById('email').value;
-      const password = document.getElementById('password').value;
-
-      if (email == '' || password == '') {
-        alert('* يرجى إدخال اسم المستخدم وكلمة المرور')
-      } else {
-        const res = await callAPI('api/Users/Login.php', {
-          'email': email,
-          'user_password': password
-        });
-        if(res.result == 1 && res.is_admin == 1) {
-          window.location.href = "zzzAdminOkay.php"
-          return;
-
-        }
-        else if (res.result == 1) {
-          window.location.href = "zzzokay.php"
-          return;
-        } else alert(res.message);
-      }
-      loginButton.classList.remove("disabled")
-      spinner.classList.add('d-none')
-
-    }
+   
   </script>
 
 </head>

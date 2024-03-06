@@ -1,0 +1,95 @@
+@keyframes upandright {
+    from {
+      transform: translate(10%, 10%);
+
+    }
+
+    to {
+      transform: translate(0%, 0%);
+    }
+
+  }
+
+  .product {
+
+    animation-name: upandright;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+  }
+
+  .product:hover {
+
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  }
+
+  .page-item {
+    cursor: pointer;
+  }
+
+
+
+
+
+  #cart-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-top: 10px;
+  }
+
+
+
+  .container {
+    max-width: 1200px;
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  h2.title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+  }
+
+
+
+  .food-box {
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    border-radius: 3px;
+  }
+
+  .pic {
+    overflow: hidden;
+  }
+
+  .pic:hover img {
+    transform: scale(1.5);
+  }
+
+  .food-img {
+    transition: 0.4s;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .food-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff6348;
+  }
+
+  .food-price {
+    font-weight: 500;
+  }
+
+
+
+  .add-cart:hover {
+    background-color: rgba(255, 0, 0, 0.786);
+    border: 0;
+  }
